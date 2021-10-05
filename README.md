@@ -4,4 +4,5 @@ Vina Sans is an open-source font inspired by the letters on street signs, flyers
 Vina Sans was developed in 2020, a year with many notable events in the Vietnamese typography. Hopefully Vina Sans will be a milestone for the country's type design when all fonts will be supported in Vietnamese.
 
 Version: 1.0
+
 Designed by Andree Nguyen
