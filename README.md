@@ -6,3 +6,7 @@ Vina Sans was developed in 2020, a year with many notable events in the Vietname
 Version: 1.0
 
 Designed by Andree Nguyen
+
+![01](docs/01.png)
+![02](docs/02.png)
+![03](docs/03.png)
