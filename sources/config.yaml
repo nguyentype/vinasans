@@ -1,0 +1,10 @@
+sources:
+  - "Vina Sans.glyphs"
+outputDir: "../fonts"
+buildStatic: true
+buildVariable: false
+buildTTF: true
+buildOTF: false
+buildWebfont: false
+cleanUp: true
+includeSourceFixes: false
