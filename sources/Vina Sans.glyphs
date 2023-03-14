@@ -10,8 +10,25 @@ DisplayStrings = (
 "kKoYyx/ecircumflexacute n",
 "/Ncommaaccent"
 );
-copyright = "Copyright (c) 2023 by Nguyen Type. All rights reserved.";
+copyright = "Copyright 2023 The Vina Sans Project Authors (https://github.com/nguyentype/vinasans)";
 customParameters = (
+{
+name = fsType;
+value = (
+);
+},
+{
+name = "Use Typo Metrics";
+value = 1;
+},
+{
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+},
+{
+name = licenseURL;
+value = "https://scripts.sil.org/OFL";
+},
 {
 name = Axes;
 value = (
@@ -24,25 +41,44 @@ Tag = wght;
 );
 date = "2023-02-11 09:03:12 +0000";
 designer = "Andree Nguyen";
-designerURL = ngmtuan.work;
-familyName = "NGT Vina Sans";
+designerURL = "https://ngmtuan.work/";
+familyName = "Vina Sans";
 featurePrefixes = (
 {
-code = "";
-name = xxxx;
+automatic = 1;
+code = "languagesystem DFLT dflt;\012\012languagesystem latn dflt;\012languagesystem latn AZE;\012languagesystem latn CRT;\012languagesystem latn KAZ;\012languagesystem latn TAT;\012languagesystem latn TRK;\012languagesystem latn ROM;\012languagesystem latn MOL;\012languagesystem latn CAT;\012";
+name = Languagesystems;
 }
 );
 features = (
 {
-code = "sub Dcroat by Dcroat.001;\012sub G by G.001;\012sub a by a.001;\012sub i by i.001;\012sub r by r.001;\012sub v by v.001;\012sub y by y.001;\012sub y by y.002;\012sub ampersand by ampersand.001;\012sub at by at.001;\012sub exclam by exclam.001;\012sub at.002 by at;\012";
+automatic = 1;
+code = "feature locl;\012feature ordn;\012feature case;\012";
 name = aalt;
 },
 {
-code = "sub hyphen greater by rightArrow;\012sub endash greater by rightArrow;\012sub colon parenright by whiteSmilingFace;\012sub colon parenright parenright by lol;\012";
-name = liga;
+automatic = 1;
+code = "lookup ccmp_Other_1 {\012	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];\012	@CombiningNonTopAccents = [cedillacomb dotbelowcomb ogonekcomb horncomb];\012	sub [i j]' @CombiningTopAccents by [idotless jdotless];\012	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];\012} ccmp_Other_1;\012\012lookup ccmp_latn_1 {\012	lookupflag 0;\012	sub brevecomb acutecomb by brevecomb_acutecomb;\012	sub brevecomb gravecomb by brevecomb_gravecomb;\012	sub brevecomb hookabovecomb by brevecomb_hookabovecomb;\012	sub brevecomb tildecomb by brevecomb_tildecomb;\012	sub circumflexcomb acutecomb by circumflexcomb_acutecomb;\012	sub circumflexcomb gravecomb by circumflexcomb_gravecomb;\012	sub circumflexcomb hookabovecomb by circumflexcomb_hookabovecomb;\012	sub circumflexcomb tildecomb by circumflexcomb_tildecomb;\012} ccmp_latn_1;\012\012script latn;\012lookup ccmp_latn_1;\012";
+name = ccmp;
 },
 {
-code = "sub N G U Y Ecircumflextilde N by nguyen;\012sub N g u y ecircumflextilde n by nguyen;\012sub C A by C_A;\012sub C Aacute by C_Aacute;\012sub C Agrave by C_Agrave;\012sub C Ahookabove by C_Ahookabove;\012sub C Atilde by C_Atilde;\012sub C O by C_O;\012sub C Ograve by C_Ograve;\012sub C Ohookabove by C_Ohookabove;\012sub C Otilde by C_Otilde;\012sub C a by C_a;\012sub C aacute by C_Aacute;\012sub C agrave by C_agrave;\012sub C ahookabove by C_ahookabove;\012sub C atilde by C_atilde;\012sub H E by H_E;\012sub L A by L_A;\012sub L E by L_E;\012sub L I by L_I;\012sub L O by L_O;\012sub L o by L_O;\012sub l o by L_O;\012sub L U by L_U;\012sub L Y by L_Y;\012sub L y by L_Y;\012sub L a by L_a;\012sub N H by N_H;\012sub O A by O_A;\012sub O Aacute by O_Aacute;\012sub O Agrave by O_Agrave;\012sub O Ahookabove by O_Ahookabove;\012sub O Atilde by O_Atilde;\012sub O I by O_I;\012sub O O by O_O;\012sub O e by O_e;\012sub Oacute C by Oacute_C;\012sub Ocircumflexacute C by Ocircumflexacute_C;\012sub Oacute E by Oacute_E;\012sub Ohookabove E by Ohookabove_E;\012sub Ohookabove I by Ohookabove_I;\012sub Otilde E by Otilde_E;\012sub Otilde I by Otilde_I;\012sub P H by P_H;\012sub R A by R_A;\012sub R E by R_E;\012sub R I by R_I;\012sub R O by R_O;\012sub R U by R_U;\012sub R a by R_a;\012sub R e by R_e;\012sub T A by T_A;\012sub T E by T_E;\012sub T H by T_H;\012sub T I by T_I;\012sub T O by T_O;\012sub T U by T_U;\012sub U A by U_A;\012sub U M by U_M;\012sub U N by U_N;\012sub Uacute A by Uacute_A;\012sub Ugrave A by Ugrave_A;\012sub Uhookabove A by Uhookabove_A;\012sub Utilde A by Utilde_A;\012sub L e by L_e;\012sub O O by O_O.001;\012sub U A by U_A.001;\012sub d o n g by dong;\012sub v n d by dong;\012sub dcroat ocircumflexgrave n g by dong;\012sub Dcroat ocircumflexgrave n g by dong;\012sub Dcroat Ocircumflexgrave N G by dong;\012sub v n dcroat by dong;\012";
+automatic = 1;
+code = "lookup locl_latn_0 {\012	script latn;\012	language AZE;\012	sub i by idotaccent;\012	language CRT;\012	sub i by idotaccent;\012	language KAZ;\012	sub i by idotaccent;\012	language TAT;\012	sub i by idotaccent;\012	language TRK;\012	sub i by idotaccent;\012} locl_latn_0;\012\012lookup locl_latn_1 {\012	script latn;\012	language ROM;\012	sub Scedilla by Scommaaccent;\012	sub scedilla by scommaaccent;\012	language MOL;\012	sub Scedilla by Scommaaccent;\012	sub scedilla by scommaaccent;\012} locl_latn_1;\012\012lookup locl_latn_2 {\012	script latn;\012	language CAT;\012	sub l periodcentered' l by periodcentered.loclCAT;\012	sub L periodcentered' L by periodcentered.loclCAT.case;\012} locl_latn_2;\012";
+name = locl;
+},
+{
+automatic = 1;
+code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;\012sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;\012";
+name = ordn;
+},
+{
+automatic = 1;
+code = "sub periodcentered.loclCAT by periodcentered.loclCAT.case;\012";
+name = case;
+},
+{
+automatic = 1;
+code = "lookupflag IgnoreMarks;\012sub C A by C_A;\012sub C Aacute by C_Aacute;\012sub C Agrave by C_Agrave;\012sub C Ahookabove by C_Ahookabove;\012sub C Atilde by C_Atilde;\012sub C O by C_O;\012sub C Oacute by C_Oacute;\012sub C Ograve by C_Ograve;\012sub C Ohookabove by C_Ohookabove;\012sub C Otilde by C_Otilde;\012sub C a by C_a;\012sub C aacute by C_aacute;\012sub C agrave by C_agrave;\012sub C ahookabove by C_ahookabove;\012sub C atilde by C_atilde;\012sub H E by H_E;\012sub L A by L_A;\012sub L E by L_E;\012sub L I by L_I;\012sub L O by L_O;\012sub L U by L_U;\012sub L Y by L_Y;\012sub L a by L_a;\012sub L e by L_e;\012sub N H by N_H;\012sub O A by O_A;\012sub O Aacute by O_Aacute;\012sub O Agrave by O_Agrave;\012sub O Ahookabove by O_Ahookabove;\012sub O Atilde by O_Atilde;\012sub O I by O_I;\012sub O O by O_O;\012sub O e by O_e;\012sub Oacute C by Oacute_C;\012sub Oacute E by Oacute_E;\012sub Oacute I by Oacute_I;\012sub Ocircumflexacute C by Ocircumflexacute_C;\012sub Ograve E by Ograve_E;\012sub Ograve I by Ograve_I;\012sub Ohookabove E by Ohookabove_E;\012sub Ohookabove I by Ohookabove_I;\012sub Otilde E by Otilde_E;\012sub Otilde I by Otilde_I;\012sub P H by P_H;\012sub R A by R_A;\012sub R E by R_E;\012sub R I by R_I;\012sub R O by R_O;\012sub R U by R_U;\012sub R a by R_a;\012sub R e by R_e;\012sub T A by T_A;\012sub T E by T_E;\012sub T H by T_H;\012sub T I by T_I;\012sub T O by T_O;\012sub T U by T_U;\012sub U A by U_A;\012sub U M by U_M;\012sub U N by U_N;\012sub Uacute A by Uacute_A;\012sub Ugrave A by Ugrave_A;\012sub Uhookabove A by Uhookabove_A;\012sub Utilde A by Utilde_A;\012";
 name = dlig;
 }
 );
@@ -51,6 +87,16 @@ fontMaster = (
 ascender = 1045;
 capHeight = 700;
 custom = Moi;
+customParameters = (
+{
+name = winAscent;
+value = 1063;
+},
+{
+name = winDescent;
+value = 200;
+}
+);
 descender = -170;
 guideLines = (
 {
@@ -151,7 +197,7 @@ GSOffsetHorizontal = 10;
 GSOffsetKeepCompatible = 1;
 GSOffsetVertical = 0;
 };
-weightValue = 900;
+weightValue = 400;
 xHeight = 500;
 },
 {
@@ -256,7 +302,7 @@ GSOffsetHorizontal = 10;
 GSOffsetKeepCompatible = 1;
 GSOffsetVertical = 0;
 };
-weightValue = 800;
+weightValue = 500;
 xHeight = 500;
 }
 );
@@ -35928,14 +35974,15 @@ rightKerningGroup = G;
 );
 instances = (
 {
-interpolationWeight = 900;
+interpolationWeight = 400;
 instanceInterpolations = {
 "96BCCF85-5232-4835-A4EF-A1D5F093B6B0" = 1;
 };
-name = Neue;
+name = Regular;
 },
 {
-interpolationWeight = 800;
+exports = 0;
+interpolationWeight = 500;
 instanceInterpolations = {
 m002 = 1;
 };
@@ -37086,7 +37133,6 @@ j = -20;
 };
 };
 manufacturer = "Nguyen Type Foundry";
-manufacturerURL = www.nguyentype.com;
 unitsPerEm = 1000;
 versionMajor = 1;
 versionMinor = 1;
