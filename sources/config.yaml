@@ -8,3 +8,4 @@ buildOTF: false
 buildWebfont: false
 cleanUp: true
 includeSourceFixes: false
+interpolate: true
